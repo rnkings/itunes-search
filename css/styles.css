@@ -1,0 +1,31 @@
+button.btn.btn-danger {
+	background-color:#3f848b;
+	border-color:#fff;
+
+}
+
+.headphones{
+	height:150px;
+	width:150px;
+}
+
+#space{
+	margin-bottom:30px;
+}
+
+
+@media(max-width:767px){
+.form-control {
+    width:100px;
+    text-align: center;
+    margin:0 auto;
+    width:60%;
+	}
+
+@media(max-width:767px){
+#topSpace {
+	margin-bottom:20px;
+	}
+}
+
+

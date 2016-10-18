@@ -4,38 +4,40 @@
   <!-- Theme Made By www.w3schools.com - No Copyright -->
   <title>itunes search</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/styles.css"> 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="icon" href="img/headphones.png"/>
-  <style>
-
-  .jumbotron {
-      background-color: #f4511e;
-      color: #fff;
-      width:100%;
-      height:100%;
-      background-size: cover;
-  }
-  </style>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href=
+  "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel=
+  "stylesheet">
+  <script src=
+  "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+  </script>
+  <script src=
+  "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+  </script>
+  <link href="img/headphones.png" rel="icon">
+  <link href="css/styles.css" rel="stylesheet">
 </head>
 <body class="jumbotron text-center">
-<!-- Icon made by Freepik from www.flaticon.com  -->
-<img class="headphones" src="img/headphones.png">
-<div>
-  <h1>itunes Search</h1>
-  <div id="space">
-    <p>Whistle a happy tune...</p>
+  <!-- Icon made by Freepik from www.flaticon.com  -->
+  <img class="headphones" src="img/headphones.png">
+  <div>
+    <h1 id="shadow">itunes Search</h1>
+    <div id="space">
+      <p>Whistle a happy tune...</p>
+    </div>
+    <form class="form-inline" id="centerAndSpace" name="centerAndSpace">
+      <div id="searchSpace">
+      <div id="searchSpace">
+        <input class="form-control" id="topSpace" placeholder=
+        "What tune is stuck in your head?" required="" size="50" type="tune">
+        <button class="btn btn-danger" id="buttonTune" type=
+        "button">Search</button>
+      </div>
+    </form>
   </div>
-  <form class="form-inline">
-    <input type="song" class="form-control" id="topSpace" size="50" placeholder="What tune is stuck in your head?" required>
-    <button type="button" class="btn btn-danger">Search</button>
-<!--     <input type="artist" class="form-control" id="topSpace" size="50" placeholder="artist are you looking for?" required>
-    <button type="button" class="btn btn-danger">Search</button> -->
-  </form>
-</div>
-<script type="text/javascript" src="js/jquery.js"></script>
+  <script src="js/itunes.js" type="text/javascript">
+  </script> 
+  <script src="js/jquery.js" type="text/javascript">
+  </script>
 </body>
 </html>

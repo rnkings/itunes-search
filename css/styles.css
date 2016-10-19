@@ -1,7 +1,10 @@
 button.btn.btn-danger {
 	background-color:#3f848b;
 	border-color:#fff;
+}
 
+button:focus{
+    background:#C1E8DA;
 }
 
 .headphones{

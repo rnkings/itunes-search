@@ -15,19 +15,7 @@ button.btn.btn-danger {
 }
 
 
-@media(max-width:767px){
-.form-control {
-    width:100px;
-    text-align: center;
-    margin:0 auto;
-    width:60%;
-	}
-}
-@media(max-width:767px){
-#topSpace {
-	margin-bottom:20px;
-	}
-}
+
 
 #shadow{
 	text-shadow: -2px 4px 10px #000;
@@ -42,11 +30,26 @@ button.btn.btn-danger {
 }
 
 #centerAndSpace{
-	width:50%;
+	width:100%;
     text-align: center;
     margin:0 auto;
 }
 
 #searchSpace{
 	margin-bottom:30px;
+}
+
+
+@media(max-width:767px){
+.form-control {
+    width:100px;
+    text-align: center;
+    margin:0 auto;
+    width:60%;
+	}
+}
+@media(max-width:767px){
+#topSpace {
+	margin-bottom:20px;
+	}
 }

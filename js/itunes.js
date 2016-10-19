@@ -1,17 +1,4 @@
-
-// 
-// GET TUNE
-// 
-
-
-// $('document').ready(function(){
-// 	var tuneName = "Upside Down";   
-	//.value like most wanted for get info?
-
-var tuneNameInput = $('#buttonTune').val();  //is this even right?
-$(selector).val(function(index,currentvalue))
-window.print();
-
+"use strict";
 
 function getTune(userInputTuneName){
 	$.ajax({
@@ -20,14 +7,31 @@ function getTune(userInputTuneName){
 		dataType: "JSONP"
 	}).done(function(data){
 		console.log(data);
+		console.log(data.results[0].trackName);
+		printToPage(data);
 	}).fail(function(error){
 		console.log("an error occured!");
 	});
 }
 
 
+
+function printToPage(data){
+	for(var i = 0; i < data.results.length; i++){
+		var result = data.results[i];
+		console.log(result.trackName);
+		console.log(result);
+		document.getElementById("printArea").innerHTML += "<hr>" + " Tune Name: " + result.trackName + "<br>" + " Artist: " + result.artistName + "<br>" + " Albumn: " + result.collectionName;
+	}
+}
+
+function getUserInput(){
+	//document.getElementByID.value
+	return document.getElementById("topSpace").value;
+	//return
+}
+
 $("#buttonTune").click(function(){
+	var userInputTuneName = getUserInput();
 	getTune(userInputTuneName);
 });
-
-
